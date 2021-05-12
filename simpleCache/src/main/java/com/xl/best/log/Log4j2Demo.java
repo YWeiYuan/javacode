@@ -27,5 +27,7 @@ public class Log4j2Demo {
                 return "1111";
             }
         });
+        final String text = "debug...format";
+        log.debug("debug: {}", ()-> text);
     }
 }
