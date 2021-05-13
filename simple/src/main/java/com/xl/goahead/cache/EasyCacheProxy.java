@@ -1,7 +1,7 @@
 /*
  * Copyright 2012-2022
  */
-package com.xl.best.cache;
+package com.xl.goahead.cache;
 
 /**
  * 一句话说明描述功能
@@ -11,4 +11,5 @@ package com.xl.best.cache;
  * @date 2021/5/12 2:15 下午
  */
 public class EasyCacheProxy {
+
 }

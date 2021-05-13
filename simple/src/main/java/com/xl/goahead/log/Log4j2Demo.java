@@ -1,7 +1,7 @@
 /*
  * Copyright 2012-2022
  */
-package com.xl.best.log;
+package com.xl.goahead.log;
 
 
 import org.apache.logging.log4j.LogManager;
