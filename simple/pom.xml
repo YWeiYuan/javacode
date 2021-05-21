@@ -61,11 +61,18 @@
             <version>${spring.framework.version}</version>
         </dependency>
 
+        <!-- HikariCP -->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>3.4.5</version>
+        </dependency>
+
+        <!--mysql driver-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.35</version>
-            <scope>runtime</scope>
+            <version>8.0.20</version>
         </dependency>
 
         <dependency>
@@ -100,6 +107,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <!--数据库文档生成工具-->
+        <dependency>
+            <groupId>cn.smallbun.screw</groupId>
+            <artifactId>screw-core</artifactId>
+            <version>1.0.5</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
