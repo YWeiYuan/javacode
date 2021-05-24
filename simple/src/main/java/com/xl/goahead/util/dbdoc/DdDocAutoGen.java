@@ -15,6 +15,7 @@ import com.zaxxer.hikari.HikariDataSource;
 
 import javax.sql.DataSource;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 /**
@@ -44,14 +45,14 @@ public class DdDocAutoGen {
                 .produceType(EngineTemplateType.freemarker).build();
 
         //忽略表
-        ArrayList<String> ignoreTableName = new ArrayList<>();
+        List<String> ignoreTableName = new ArrayList<>();
         ignoreTableName.add("test_user");
         ignoreTableName.add("test_group");
         //忽略表前缀
-        ArrayList<String> ignorePrefix = new ArrayList<>();
+        List<String> ignorePrefix = new ArrayList<>();
         ignorePrefix.add("test_");
         //忽略表后缀
-        ArrayList<String> ignoreSuffix = new ArrayList<>();
+        List<String> ignoreSuffix = new ArrayList<>();
         ignoreSuffix.add("_test");
         ProcessConfig processConfig = ProcessConfig.builder()
                 //忽略表名

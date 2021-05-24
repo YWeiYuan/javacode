@@ -3,8 +3,6 @@
  */
 package com.xl.goahead.util;
 
-import org.apache.commons.lang.StringUtils;
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
