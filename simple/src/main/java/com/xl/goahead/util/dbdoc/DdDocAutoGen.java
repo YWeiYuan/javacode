@@ -66,7 +66,7 @@ public class DdDocAutoGen {
                 //版本
                 .version("1.0.0")
                 //描述
-                .description("数据库设计文档生成")
+                .description("代步车数据库设计")
                 //数据源
                 .dataSource(primaryDataSource())
                 //生成配置

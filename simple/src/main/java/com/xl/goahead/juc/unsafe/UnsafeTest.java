@@ -41,7 +41,7 @@ public class UnsafeTest {
     }
 
     /**
-     * unsafe allocateInstance方法，不调用构造方法生成对象
+     * unsafe allocateInstance方法，不会调用构造方法
      */
     public static void allocateInstance() {
         Unsafe unsafe = getUnsafeByReflect();
@@ -76,7 +76,4 @@ public class UnsafeTest {
             return a;
         }
     }
-
-
-
 }

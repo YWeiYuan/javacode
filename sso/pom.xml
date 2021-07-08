@@ -5,14 +5,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xl.goahead</groupId>
-    <artifactId>javacodes</artifactId>
+    <artifactId>sso</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>sso-client</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.mzlion</groupId>
+                <artifactId>easy-okhttp</artifactId>
+                <version>1.1.2</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
