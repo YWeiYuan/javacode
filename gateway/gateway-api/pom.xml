@@ -8,7 +8,7 @@
         <version>2.5.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.xl.goahead</groupId>
+    <groupId>com.weiyuan.learn</groupId>
     <artifactId>gateway-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gateway-api</name>
