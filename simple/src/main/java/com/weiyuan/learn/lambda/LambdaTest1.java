@@ -3,7 +3,7 @@
  */
 package com.weiyuan.learn.lambda;
 
-import com.weiyuan.learn.lambda.interfaces.IFun1;
+import com.weiyuan.learn.lambda.interfaces.LambdaNoneReturnNoneParameter;
 
 /**
  * 一句话说明描述功能
@@ -14,9 +14,9 @@ import com.weiyuan.learn.lambda.interfaces.IFun1;
  */
 public class LambdaTest1 {
     public static void main(String[] args) {
-        IFun1 fun1 = () -> System.out.println(1111);
-        IFun1 fun2 = () -> {
+        LambdaNoneReturnNoneParameter fun1 = () -> System.out.println(1111);
 
-        };
     }
 }
+
+

@@ -66,7 +66,7 @@ public class DdDocAutoGen {
                 //版本
                 .version("1.0.0")
                 //描述
-                .description("代步车数据库设计")
+                .description("定时任务 ucar_chronus")
                 //数据源
                 .dataSource(primaryDataSource())
                 //生成配置
@@ -79,7 +79,7 @@ public class DdDocAutoGen {
 
     /**
      * 配置信息
-     * @return
+     * @return datasource 
      */
     private static DataSource primaryDataSource() {
         Properties pros = PropertiesUtil.loadProperties("screw.properties");

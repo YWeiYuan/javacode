@@ -8,11 +8,8 @@ package com.weiyuan.learn.lambda.interfaces;
  *
  * @author longquan.huang
  * @version 1.0
- * @date 2021/7/15 2:25 下午
+ * @date 2021/7/19 11:27 上午
  */
-public interface IFun1 {
-    /**
-     * 无参数，无返回值
-     */
-    public void fun();
+public interface LambdaNoneReturnSingleParameter {
+    void test(int n);
 }
