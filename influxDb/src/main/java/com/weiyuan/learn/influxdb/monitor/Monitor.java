@@ -10,6 +10,7 @@ import org.influxdb.dto.Point;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -21,15 +22,15 @@ import java.util.concurrent.TimeUnit;
  */
 @Service
 @Slf4j
-@AllArgsConstructor
 public class Monitor {
+    @Resource
     private InfluxDB influxDB;
 
     @Scheduled(fixedRate = 5000)
     public void writeQPS() {
-       int count =  (int) (Math.random() * 100);
+        int count = (int) (Math.random() * 100);
         Point point = Point.measurement("ApiQPS")
-                .tag("url", "hello")
+                .tag("url", "/hello/" + count % 4)
                 .addField("count", count)
                 .addField("x", "local")
                 .time(System.nanoTime(), TimeUnit.MICROSECONDS)

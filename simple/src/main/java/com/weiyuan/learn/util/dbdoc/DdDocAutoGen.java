@@ -79,7 +79,7 @@ public class DdDocAutoGen {
 
     /**
      * 配置信息
-     * @return datasource 
+     * @return datasource
      */
     private static DataSource primaryDataSource() {
         Properties pros = PropertiesUtil.loadProperties("screw.properties");
