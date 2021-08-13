@@ -15,7 +15,7 @@ import com.weiyuan.learn.lambda.interfaces.LambdaNoneReturnNoneParameter;
 public class LambdaTest1 {
     public static void main(String[] args) {
         LambdaNoneReturnNoneParameter fun1 = () -> System.out.println(1111);
-
+        System.gc();
     }
 }
 

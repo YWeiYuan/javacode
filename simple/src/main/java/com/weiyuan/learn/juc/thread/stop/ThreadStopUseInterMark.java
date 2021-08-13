@@ -1,7 +1,7 @@
 /*
  * Copyright 2012-2022
  */
-package com.weiyuan.learn.juc.thread;
+package com.weiyuan.learn.juc.thread.stop;
 
 /**
  * 如何安全中断线程
