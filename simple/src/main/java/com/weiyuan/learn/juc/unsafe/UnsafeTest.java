@@ -19,7 +19,6 @@ public class UnsafeTest {
         allocateInstance();
     }
 
-
     /**
      * 获取unsafe对象,不能通过new Unsafe 以及 getUnsafe()方法获取，
      * 因为 unsafe被设计成单利模式，并且只能通过类加载器进行调用 可以查看源码 Unsafe.getUnsafe()的实现
