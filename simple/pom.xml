@@ -139,6 +139,12 @@
             <version>3.0.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.66.Final</version>
+        </dependency>
+
         <!--对象标记Mark Word-->
         <dependency>
             <groupId>org.openjdk.jol</groupId>
