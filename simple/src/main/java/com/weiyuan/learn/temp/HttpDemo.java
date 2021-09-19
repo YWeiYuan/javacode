@@ -1,7 +1,7 @@
 /*
  * Copyright 2012-2022
  */
-package com.weiyuan.learn.util;
+package com.weiyuan.learn.temp;
 
 
 import com.mzlion.core.http.ContentType;
@@ -19,7 +19,7 @@ import java.io.File;
  * @version 1.0
  * @date 2021/9/19 7:54 下午
  */
-public class HttpsClient {
+public class HttpDemo {
     public static void main(String[] args) {
         // 普通的GET请求无参数
         String responseData = HttpClient
@@ -80,7 +80,7 @@ public class HttpsClient {
                 // 请求方式和请求url
                 .binaryBody("http://localhost:8080/user-sys/user/body3")
                 // post提交流
-                .stream(HttpsClient.class.getClassLoader().getResourceAsStream("avatar.png"))
+                .stream(HttpDemo.class.getClassLoader().getResourceAsStream("avatar.png"))
                 //设置请求内容类型
                 .contentType(ContentType.IMAGE_JPG)
                 //post提交文件
@@ -94,7 +94,7 @@ public class HttpsClient {
                 .post("http://localhost:8080/user-sys/user/add")
                 .param("name", "李四")
                 .param("mobile", "13023614021")
-                .param("avatarFile", HttpsClient.class.getClassLoader().getResourceAsStream("avatar.png"), "avatar.png")
+                .param("avatarFile", HttpDemo.class.getClassLoader().getResourceAsStream("avatar.png"), "avatar.png")
                 //.param("avatarFile", new File("D:/avatar.png")
                 .asString();
 

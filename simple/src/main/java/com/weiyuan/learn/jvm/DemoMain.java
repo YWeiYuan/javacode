@@ -1,7 +1,7 @@
 /*
  * Copyright 2012-2022
  */
-package com.weiyuan.learn.temp;
+package com.weiyuan.learn.jvm;
 
 /**
  * Demo demo = new Demo() 在内存做什么？
